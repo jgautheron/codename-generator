@@ -33,5 +33,5 @@ Contributions are most welcome, especially for enlarging the words pool.
 MIT
 
 ## Author
-Jonathan Gautheron - jgautheron [A-T] neverblend.in
+Jonathan Gautheron - jgautheron [A-T] neverblend.in  
 https://twitter.com/jgautheron
