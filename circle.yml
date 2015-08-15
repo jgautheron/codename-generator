@@ -1,0 +1,21 @@
+machine:
+  environment:
+    GOPATH: "/home/ubuntu/.go_workspace"
+    ORG_PATH: "github.com/jgautheron"
+    REPO_PATH: "${ORG_PATH}/codename-generator"
+    PATH: "${PATH}:${GOPATH}/bin"
+
+dependencies:
+  override:
+    - rm -rf ${GOPATH}/src/${REPO_PATH}
+    - mkdir -p ${GOPATH}/src/${ORG_PATH}
+    - cp -r ../codename-generator ${GOPATH}/src/${ORG_PATH}
+    - go get github.com/kr/godep
+    - cd ${GOPATH}/src/${REPO_PATH} && godep restore
+
+test:
+  override:
+    - godep go build:
+        pwd: ../.go_workspace/src/${REPO_PATH}
+    - godep go test -coverpkg ${REPO_PATH} ./...:
+        pwd: ../.go_workspace/src/${REPO_PATH}
