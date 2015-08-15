@@ -24,7 +24,7 @@ Then in your code:
 import "github.com/jgautheron/codename-generator"
 
 // Sanitized returns a safe string, ex. "awesome-hero".
-cn := codename.Get(codename.Sanitized)
+cn, err := codename.Get(codename.Sanitized)
 ```
 
 ## Contributing
