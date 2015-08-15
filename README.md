@@ -1,4 +1,4 @@
-# codename-generator [![Circle CI](https://circleci.com/gh/jgautheron/codename-generator.svg?style=svg)](https://circleci.com/gh/jgautheron/codename-generator) [![Coverage Status](https://coveralls.io/repos/jgautheron/codename-generator/badge.svg?branch=master&service=github)](https://coveralls.io/github/jgautheron/codename-generator?branch=master)
+# codename-generator [![Circle CI](https://circleci.com/gh/jgautheron/codename-generator.svg?style=svg)](https://circleci.com/gh/jgautheron/codename-generator)
 
 This library written in Golang generates a random code name meant for naming software releases if you run short of inspiration.
 
