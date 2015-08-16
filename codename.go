@@ -3,7 +3,8 @@
 //
 // Currently based on the pattern "[Superb] [Superhero]".
 //
-// The words were taken from:
+// The dictionaries are from:
+//
 // - https://github.com/sindresorhus/superb
 // - https://github.com/sindresorhus/superheroes
 //
