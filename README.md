@@ -1,4 +1,4 @@
-# codename-generator [![Circle CI](https://circleci.com/gh/jgautheron/codename-generator.svg?style=svg)](https://circleci.com/gh/jgautheron/codename-generator) [![Coverage Status](https://coveralls.io/repos/jgautheron/codename-generator/badge.svg?branch=master&service=github)](https://coveralls.io/github/jgautheron/codename-generator?branch=master)
+# codename-generator [![Circle CI](https://circleci.com/gh/jgautheron/codename-generator.svg?style=svg)](https://circleci.com/gh/jgautheron/codename-generator)
 
 This library written in Golang generates a random code name meant for naming software releases if you run short of inspiration.
 
@@ -28,7 +28,7 @@ Then in your code:
 import "github.com/jgautheron/codename-generator"
 
 // Sanitized returns a safe string, ex. "awesome-hero".
-cn := codename.Get(codename.Sanitized)
+cn, err := codename.Get(codename.Sanitized)
 ```
 
 ## Contributing
