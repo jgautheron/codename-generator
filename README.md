@@ -11,12 +11,6 @@ A few examples of generated codenames:
 - Fabulous Longshot
 - Wonderful Plazm
 
-The words are included in the binary with go-bindata, to regenerate the dictionary, run in the codename folder:
-```
-$ go get -u github.com/jteeuwen/go-bindata/...
-$ go-bindata -o words.go -pkg codename data/
-```
-
 ## Getting started
 First, download the project.
 ```
