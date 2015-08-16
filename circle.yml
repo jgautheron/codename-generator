@@ -23,5 +23,9 @@ test:
         pwd: ../.go_workspace/src/${REPO_PATH}
     - godep go test -v -cover -race -coverprofile=/home/ubuntu/coverage.out:
         pwd: ../.go_workspace/src/${REPO_PATH}
+    - FORMATTED="$(go fmt ./...)" && \
+      ( ( [[ -n $FORMATTED ]] && echo "gofmt failed on the following files:" && echo -ne $FORMATTED && exit 1) || (( [[ -z $FORMATTED ]] && echo "gofmt passed")  ) )
+    - VETTED="$(go vet ./...)" && \
+      ( ( [[ -n $VETTED ]] && echo "govet failed on the following files:" && echo -ne $VETTED && exit 1) || (( [[ -z $VETTED ]] && echo "govet passed")  ) )
   post:
     - $GOPATH/bin/goveralls -coverprofile=/home/ubuntu/coverage.out -service=circle-ci -repotoken=$COVERALLS_REPO_TOKEN
