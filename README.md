@@ -4,13 +4,17 @@ This library written in Golang generates a random code name meant for naming sof
 
 Currently based on the pattern "[Superb] [Superhero]".
 
-The words were taken from:
-- https://github.com/sindresorhus/superb
-- https://github.com/sindresorhus/superheroes
+A few examples of generated codenames:
+- Marvelous Meggan
+- Prime Doll
+- Priceless Ultimo
+- Fabulous Longshot
+- Wonderful Plazm
 
 The words are included in the binary with go-bindata, to regenerate the dictionary, run in the codename folder:
 ```
-# go-bindata -o words.go -pkg codename data/
+$ go get -u github.com/jteeuwen/go-bindata/...
+$ go-bindata -o words.go -pkg codename data/
 ```
 
 ## Getting started
@@ -28,7 +32,13 @@ cn := codename.Get(codename.Sanitized)
 ```
 
 ## Contributing
-Contributions are most welcome, especially for enlarging the words pool.
+Contributions are most welcome, especially for enlarging the words pool.  
+Instructions are documented in [CONTRIBUTING.md](https://github.com/jgautheron/codename-generator/blob/master/CONTRIBUTING.md).
+
+## Credits
+The dictionaries are from:
+- https://github.com/sindresorhus/superb
+- https://github.com/sindresorhus/superheroes
 
 ## License
 MIT
