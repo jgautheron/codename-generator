@@ -3,14 +3,10 @@
 //
 // Currently based on the pattern "[Superb] [Superhero]".
 //
-// The dictionaries are from:
-//
-// - https://github.com/sindresorhus/superb
-// - https://github.com/sindresorhus/superheroes
-//
 // The words are included in the binary with go-bindata, to regenerate
 // the dictionary, run in the codename folder:
-//     # go-bindata -o words.go -pkg codename data/
+//   $ go get -u github.com/jteeuwen/go-bindata/...
+//   $ go-bindata -o words.go -pkg codename data/
 package codename
 
 import (
