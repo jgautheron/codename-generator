@@ -78,12 +78,13 @@ func Get(format FormatType) (string, error) {
 		codename = strings.Join(csn, " ")
 		break
 	case Sanitized:
-		codename = strings.ToLower(strings.Trim(codename, "-"))
-		reg, err := regexp.Compile("[^a-z0-9]+")
+		codename = strings.ToLower(strings.TrimSpace(codename))
+		codename = strings.Replace(codename, " ", "-", -1)
+		reg, err := regexp.Compile("[^a-z0-9-]+")
 		if err != nil {
 			return "", err
 		}
-		codename = reg.ReplaceAllString(codename, "-")
+		codename = reg.ReplaceAllString(codename, "")
 		break
 	}
 
