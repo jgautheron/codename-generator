@@ -1,20 +1,5 @@
 {
 	"ImportPath": "github.com/jgautheron/codename-generator",
 	"GoVersion": "go1.4.2",
-	"Deps": [
-		{
-			"ImportPath": "github.com/jtolds/gls",
-			"Rev": "9a4a02dbe491bef4bab3c24fd9f3087d6c4c6690"
-		},
-		{
-			"ImportPath": "github.com/smartystreets/assertions",
-			"Comment": "1.5.0-391-g8121b35",
-			"Rev": "8121b35a306f72fab16bdbc59d7809563955ca4d"
-		},
-		{
-			"ImportPath": "github.com/smartystreets/goconvey/convey",
-			"Comment": "1.5.0-409-g77a67b3",
-			"Rev": "77a67b3e7f4e0b1dd55c2f5702f7b5a97850d2eb"
-		}
-	]
+	"Deps": []
 }
